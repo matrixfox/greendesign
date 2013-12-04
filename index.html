@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>Matrixfox | Green Design</title>
+    <link href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false' type='text/javascript'></script>
+    <script>
+      var map;
+      function initialize() {
+      var mapOptions = {
+      zoom: 8,
+      center: new google.maps.LatLng(33.7550, -84.3900),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- ================================================== -->
+    <!-- NAVBAR -->
+    <!-- ================================================== -->
+    <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+      <section class='container'>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='#'>Green<span>Design</span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse navbar-ex1-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li>
+              <a href='#'>Home</a>
+            </li>
+            <li class='spacer'></li>
+            <li>
+              <a href='#'>About</a>
+            </li>
+            <li class='spacer'></li>
+            <li>
+              <a href='#'>Portfolio</a>
+            </li>
+            <li class='spacer'></li>
+            <li>
+              <a href='#'>Clients</a>
+            </li>
+            <li class='spacer'></li>
+            <li>
+              <a href='#'>Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+    <!-- ================================================== -->
+    <!-- JUMBOTRON -->
+    <!-- ================================================== -->
+    <div class='jumbotron'>
+      <div class='container'>
+        <h1>We know web design</h1>
+        <p class='last'>With over 15 years experience you can be sure<br>your website is in safe hands</p>
+        <button class='btn btn-primary btn-lg' type='button'>View our work</button>
+        <div class='leaf'></div>
+      </div>
+    </div>
+    <!-- ================================================== -->
+    <!-- Marketing messaging and featurettes -->
+    <!-- ================================================== -->
+    <div class='container wrapper'>
+      <div class='row services text-center'>
+        <div class='col-lg-4'>
+          <img alt='Generic placeholder image' class='thumbnails' src='images/webdesgin.png'>
+          <h2>Web Design</h2>
+          <p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+        </div>
+        <div class='col-lg-4'>
+          <img alt='Generic placeholder image' class='thumbnails' src='images/ecommerce.png'>
+          <h2>E-commerce</h2>
+          <p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+        </div>
+        <div class='col-lg-4'>
+          <img alt='Generic placeholder image' class='thumbnails' src='images/seo.png'>
+          <h2>SEO</h2>
+          <p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem</p>
+        </div>
+      </div>
+      <!-- ================================================== -->
+      <!-- Tag -->
+      <!-- ================================================== -->
+      <article class='tag-wrapper'>
+        <span class='tag'>What Our Clients Say</span>
+      </article>
+      <!-- ================================================== -->
+      <!-- START THE FEATURETTES -->
+      <!-- ================================================== -->
+      <div class='row featurette'>
+        <div class='col-md-4'>
+          <img alt='Generic placeholder image' class='gravatar' src='images/avatar.png'>
+        </div>
+        <div class='col-md-8'>
+          <blockquote class='text-center'>
+            <p>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et l</p>
+          </blockquote>
+        </div>
+      </div>
+      <!-- ================================================== -->
+      <!-- Tag -->
+      <!-- ================================================== -->
+      <article class='tag-wrapper'>
+        <span class='tag'>Drop Us A Line</span>
+      </article>
+      <!-- ================================================== -->
+      <!-- Contact -->
+      <!-- ================================================== -->
+      <section class='row contact'>
+        <article class='col-md-4'>
+          <ul class='info'>
+            <li>
+              <a class='phone' href='callto:15552680012'>
+                <span>555-268-001</span>
+              </a>
+            </li>
+            <li>
+              <a class='email' href='mailto:hello@example.com?Subject=Green%20Design'>
+                <span>hello@...com</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class='col-md-4'>
+          <ul class='info'>
+            <li>
+              <a class='gps' href='#'>
+                <span>Leaf Studios<br>Times Square<br>NY</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class='col-md-4 location'>
+          <div id='map-canvas'></div>
+        </article>
+      </section>
+      <!-- ================================================== -->
+      <!-- Footer -->
+      <!-- ================================================== -->
+      <footer>
+        <article>
+          <ul class='info'>
+            <li>
+              <a class='facebook' href='#'></a>
+            </li>
+            <li>
+              <a class='twitter' href='https://twitter.com/matrixfoxtard/'></a>
+            </li>
+            <li>
+              <a class='pentrest' href='#'></a>
+            </li>
+            <li>
+              <a class='linkin' href='#'></a>
+            </li>
+          </ul>
+        </article>
+      </footer>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42087512-1', 'matrixfox.com');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

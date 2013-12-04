@@ -1,0 +1,244 @@
+!!!
+%html{:lang => "en"}
+ %head
+  %meta{'charset' => 'utf-8'}
+  %meta{'name' => 'viewport', 'content' => 'width=device-width, initial-scale=1.0'}
+  %title Matrixfox | Green Design
+  %link(rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css")
+
+  / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  %script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false")
+  %script
+   var map;
+   function initialize() {
+   var mapOptions = {
+   zoom: 8,
+   center: new google.maps.LatLng(33.7550, -84.3900),
+   mapTypeId: google.maps.MapTypeId.ROADMAP
+   };
+   map = new google.maps.Map(document.getElementById('map-canvas'),
+   mapOptions);
+   }
+   google.maps.event.addDomListener(window, 'load', initialize);
+
+  %link(rel="stylesheet" type="text/css" href="css/style.css")
+ %body
+  / ==================================================
+  / NAVBAR
+  / ==================================================
+  %nav{'class' => 'navbar navbar-inverse navbar-fixed-top', 'role' => 'navigation'}
+   %section.container
+    / Brand and toggle get grouped for better mobile display
+    %div.navbar-header
+     %button{'type' => 'button', 'class' => 'navbar-toggle', 'data-toggle' => 'collapse', 'data-target' => '.navbar-ex1-collapse'}
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+
+     %a{'class' => 'navbar-brand', 'href' => '#'} Green<span>Design</span>
+
+    / Collect the nav links, forms, and other content for toggling
+    %div.collapse.navbar-collapse.navbar-ex1-collapse
+
+     %ul.nav.navbar-nav.navbar-right
+      %li
+       %a{'href' => '#'}Home
+      %li.spacer
+      %li
+       %a{'href' => '#'}About
+      %li.spacer
+      %li
+       %a{'href' => '#'}Portfolio
+      %li.spacer
+      %li
+       %a{'href' => '#'}Clients
+      %li.spacer
+      %li
+       %a{'href' => '#'}Contacts
+
+
+
+
+
+
+
+
+
+
+  / ==================================================
+  / JUMBOTRON
+  / ==================================================
+  %div.jumbotron
+   %div.container
+    %h1 We know web design
+    %p.last With over 15 years experience you can be sure<br>your website is in safe hands
+    %button{'type' => 'button', 'class' => 'btn btn-primary btn-lg'} View our work
+    %div.leaf
+
+
+
+
+
+
+
+
+
+
+
+  / ==================================================
+  / Marketing messaging and featurettes
+  / ==================================================
+  %div.container.wrapper
+   %div.row.services.text-center
+    %div.col-lg-4
+     %img{'class' => 'thumbnails', 'src' => 'images/webdesgin.png', 'alt' => 'Generic placeholder image'}
+     %h2 Web Design
+     %p quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem
+
+    %div.col-lg-4
+     %img{'class' => 'thumbnails', 'src' => 'images/ecommerce.png', 'alt' => 'Generic placeholder image'}
+     %h2 E-commerce
+     %p quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem
+
+    %div.col-lg-4
+     %img{'class' => 'thumbnails', 'src' => 'images/seo.png', 'alt' => 'Generic placeholder image'}
+     %h2 SEO
+     %p quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et laboribusam endi rerum as minullorent officiatum non cuscium quuntem
+
+
+
+
+
+
+
+
+
+
+
+   / ==================================================
+   / Tag
+   / ==================================================
+   %article.tag-wrapper
+    %span.tag What Our Clients Say
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   / ==================================================
+   / START THE FEATURETTES
+   / ==================================================
+   %div.row.featurette
+    %div.col-md-4
+     %img{'class' => 'gravatar', 'src' => 'images/avatar.png', 'alt' => 'Generic placeholder image'}
+    %div.col-md-8
+     %blockquote.text-center
+      %p quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et l
+
+
+
+
+
+
+
+
+
+
+
+   / ==================================================
+   / Tag
+   / ==================================================
+   %article.tag-wrapper
+    %span.tag Drop Us A Line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   / ==================================================
+   / Contact
+   / ==================================================
+   %section.row.contact
+    %article.col-md-4
+     %ul.info
+      %li
+       %a{'href' => 'callto:15552680012', 'class' => 'phone'}
+        %span 555-268-001
+      %li
+       %a{'href' => 'mailto:hello@example.com?Subject=Green%20Design', 'class' => 'email'}
+        %span hello@...com
+
+    %article.col-md-4
+     %ul.info
+      %li
+       %a{'href' => '#', 'class' => 'gps'}
+        %span Leaf Studios<br>Times Square<br>NY
+
+    %article.col-md-4.location
+     %div#map-canvas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   / ==================================================
+   / Footer
+   / ==================================================
+   %footer
+    %article
+     %ul.info
+      %li
+       %a{'href' => '#', 'class' => 'facebook'}
+      %li
+       %a{'href' => 'https://twitter.com/matrixfoxtard/', 'class' => 'twitter'}
+      %li
+       %a{'href' => '#', 'class' => 'pentrest'}
+      %li
+       %a{'href' => '#', 'class' => 'linkin'}
+
+  %script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+  %script(type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js")
+  %script(type="text/javascript")
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-42087512-1', 'matrixfox.com');
+   ga('send', 'pageview');
