@@ -38,7 +38,7 @@ hr {
 
 
 .navbar-brand {
-	background: url('http://matrixfox.com/portfolio/greendesign/images/logo.png') no-repeat 10% 0%;
+	background: url('https://raw.github.com/matrixfox/greendesign/master/images/logo.png') no-repeat 10% 0%;
 	padding-left: 74px;
 	font-size: 2em;
 	font-weight: bold;
@@ -124,7 +124,7 @@ p, button {
  }
  .jumbotron:after {
  	content:"";
-	background: url('http://matrixfox.com/portfolio/greendesign/images/background.jpg') no-repeat 100% 80%;
+	background: url('https://raw.github.com/matrixfox/greendesign/master/images/background.jpg') no-repeat 100% 80%;
 	-webkit-background-size: cover;/* Causes Resizing 1px Left Border deal with it or find hack */
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -140,7 +140,7 @@ p, button {
 
 
 .leaf {
-	background: url('http://matrixfox.com/portfolio/greendesign/images/overlay-leaf.png') no-repeat 100% 80%;
+	background: url('https://raw.github.com/matrixfox/greendesign/master/images/overlay-leaf.png') no-repeat 100% 80%;
 	height: 550px;
 	position:relative;
 	bottom:380px;
@@ -297,7 +297,7 @@ p {
 
 blockquote:after {
  	content:"";
-	background: url('http://matrixfox.com/portfolio/greendesign/images/quotes.png') no-repeat;
+	background: url('https://raw.github.com/matrixfox/greendesign/master/images/quotes.png') no-repeat;
 
 	position: absolute;
 	top: 0;
@@ -335,7 +335,7 @@ span {
 }
 
 a {
-	background:url('http://matrixfox.com/portfolio/greendesign/images/greendesign-sprite.png') no-repeat;
+	background:url('https://raw.github.com/matrixfox/greendesign/master/images/greendesign-sprite.png') no-repeat;
 	text-decoration: none;
 }
 
