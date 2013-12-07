@@ -8,7 +8,6 @@ ALL RIGHTS RESERVED TO ORIGINAL AUTHORS
 
 
 
-1. Research Chrome Bootstraps Mysterious 1px border-left on Jumbotron
-2. Research Weird Chrome Highlight Select Text on Blockquote
-3. Combine Blockquote PNG to the sprite file *Was seeing cruddy images, made my own test*
-4. Convert font-size px to em's
+
+1. Combine Blockquote PNG to the sprite file
+2. Convert font-size px to em's
